@@ -41,7 +41,8 @@ struct ContentView: View {
             }
             
             if (isShownAV) {
-                AVCaptureQRContainer()
+                // AVCaptureQRContainer()
+                AVView()
             }
         }
     }
