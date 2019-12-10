@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A422C44E23A0226B004A6DB6 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A422C44D23A0226B004A6DB6 /* ScannerViewController.swift */; };
-		A422C45023A030E0004A6DB6 /* ScannerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A422C44F23A030E0004A6DB6 /* ScannerResultView.swift */; };
 		A4244DF9239D794D00FC6344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4244DF8239D794D00FC6344 /* AppDelegate.swift */; };
 		A4244DFB239D794D00FC6344 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4244DFA239D794D00FC6344 /* SceneDelegate.swift */; };
 		A4244DFD239D794D00FC6344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4244DFC239D794D00FC6344 /* ContentView.swift */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		A422C44D23A0226B004A6DB6 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
-		A422C44F23A030E0004A6DB6 /* ScannerResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResultView.swift; sourceTree = "<group>"; };
 		A4244DF5239D794D00FC6344 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4244DF8239D794D00FC6344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4244DFA239D794D00FC6344 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				A4244E06239D794E00FC6344 /* Info.plist */,
 				A4244E00239D794E00FC6344 /* Preview Content */,
 				A422C44D23A0226B004A6DB6 /* ScannerViewController.swift */,
-				A422C44F23A030E0004A6DB6 /* ScannerResultView.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -273,7 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A422C45023A030E0004A6DB6 /* ScannerResultView.swift in Sources */,
 				A4244DF9239D794D00FC6344 /* AppDelegate.swift in Sources */,
 				A4244DFB239D794D00FC6344 /* SceneDelegate.swift in Sources */,
 				A4244DFD239D794D00FC6344 /* ContentView.swift in Sources */,
