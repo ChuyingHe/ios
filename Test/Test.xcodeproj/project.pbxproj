@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A422C44E23A0226B004A6DB6 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A422C44D23A0226B004A6DB6 /* ScannerViewController.swift */; };
+		A422C45023A030E0004A6DB6 /* ScannerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A422C44F23A030E0004A6DB6 /* ScannerResultView.swift */; };
 		A4244DF9239D794D00FC6344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4244DF8239D794D00FC6344 /* AppDelegate.swift */; };
 		A4244DFB239D794D00FC6344 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4244DFA239D794D00FC6344 /* SceneDelegate.swift */; };
 		A4244DFD239D794D00FC6344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4244DFC239D794D00FC6344 /* ContentView.swift */; };
@@ -15,10 +17,6 @@
 		A4244E05239D794E00FC6344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4244E03239D794E00FC6344 /* LaunchScreen.storyboard */; };
 		A4244E10239D794E00FC6344 /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4244E0F239D794E00FC6344 /* TestTests.swift */; };
 		A4244E1B239D794E00FC6344 /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4244E1A239D794E00FC6344 /* TestUITests.swift */; };
-		A4244E29239D7A7700FC6344 /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4244E28239D7A7700FC6344 /* QRCodeScanner.swift */; };
-		A4244EA3239D83E700FC6344 /* AVCaptureQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4244EA2239D83E700FC6344 /* AVCaptureQR.swift */; };
-		A483D6C8239E6D6E0043371A /* AVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A483D6C7239E6D6E0043371A /* AVViewController.swift */; };
-		A483D6CA239E6D7A0043371A /* AVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A483D6C9239E6D7A0043371A /* AVView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A422C44D23A0226B004A6DB6 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		A422C44F23A030E0004A6DB6 /* ScannerResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResultView.swift; sourceTree = "<group>"; };
 		A4244DF5239D794D00FC6344 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4244DF8239D794D00FC6344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4244DFA239D794D00FC6344 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,10 +53,6 @@
 		A4244E16239D794E00FC6344 /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4244E1A239D794E00FC6344 /* TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITests.swift; sourceTree = "<group>"; };
 		A4244E1C239D794E00FC6344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4244E28239D7A7700FC6344 /* QRCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
-		A4244EA2239D83E700FC6344 /* AVCaptureQR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureQR.swift; sourceTree = "<group>"; };
-		A483D6C7239E6D6E0043371A /* AVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVViewController.swift; sourceTree = "<group>"; };
-		A483D6C9239E6D7A0043371A /* AVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +109,9 @@
 				A4244DFE239D794E00FC6344 /* Assets.xcassets */,
 				A4244E03239D794E00FC6344 /* LaunchScreen.storyboard */,
 				A4244E06239D794E00FC6344 /* Info.plist */,
-				A483D6C7239E6D6E0043371A /* AVViewController.swift */,
-				A483D6C9239E6D7A0043371A /* AVView.swift */,
 				A4244E00239D794E00FC6344 /* Preview Content */,
-				A4244E28239D7A7700FC6344 /* QRCodeScanner.swift */,
-				A4244EA2239D83E700FC6344 /* AVCaptureQR.swift */,
+				A422C44D23A0226B004A6DB6 /* ScannerViewController.swift */,
+				A422C44F23A030E0004A6DB6 /* ScannerResultView.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -279,13 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A422C45023A030E0004A6DB6 /* ScannerResultView.swift in Sources */,
 				A4244DF9239D794D00FC6344 /* AppDelegate.swift in Sources */,
 				A4244DFB239D794D00FC6344 /* SceneDelegate.swift in Sources */,
-				A4244E29239D7A7700FC6344 /* QRCodeScanner.swift in Sources */,
-				A483D6C8239E6D6E0043371A /* AVViewController.swift in Sources */,
 				A4244DFD239D794D00FC6344 /* ContentView.swift in Sources */,
-				A483D6CA239E6D7A0043371A /* AVView.swift in Sources */,
-				A4244EA3239D83E700FC6344 /* AVCaptureQR.swift in Sources */,
+				A422C44E23A0226B004A6DB6 /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
