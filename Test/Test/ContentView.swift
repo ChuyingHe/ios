@@ -16,14 +16,13 @@ struct ContentView: View {
         
         NavigationView {
             ZStack {
-                Text(self.result)
-                
+                // Text(self.result)
                 Button(action: {
                     self.showScanner = true
                 }, label: {
                     Text("Neue QR Code Scannen")
                 }).sheet(isPresented: self.$showScanner) {
-                    ScannerViewController()
+                    ScannerViewController(result: self.$result)
                 }
                 
             }
