@@ -11,18 +11,10 @@ import AVFoundation
 import UIKit
 
 final class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
-    @Binding var result: String
+    // @Binding var result: String
     
     var captureSession: AVCaptureSession?
     var previewLayer: AVCaptureVideoPreviewLayer?
-    
-    init(result: Binding<String>) {
-        _result = result
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func viewDidLoad() {
         
@@ -121,8 +113,8 @@ final class ScannerViewController: UIViewController, AVCaptureMetadataOutputObje
                 return
             }
             
+            // @TODO: what happend then?
             print(stringValue)
-            // $result = String(stringValue)
         }
         
         dismiss(animated: true)
@@ -136,11 +128,11 @@ final class ScannerViewController: UIViewController, AVCaptureMetadataOutputObje
     
 }
 
-extension ScannerViewController: UIViewControllerRepresentable, UITextViewDelegate {
+extension ScannerViewController: UIViewControllerRepresentable {
     public typealias UIViewControllerType = ScannerViewController
 
     func makeUIViewController(context: UIViewControllerRepresentableContext<ScannerViewController>) -> ScannerViewController {
-        return ScannerViewController(result: $result)
+        return ScannerViewController()
     }
     
     func updateUIViewController(_ uiViewController: ScannerViewController, context: UIViewControllerRepresentableContext<ScannerViewController>) {
