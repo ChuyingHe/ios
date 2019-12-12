@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var showScanner = false
     @State private var result: String = ""
     
+    
     var body: some View {
         
         NavigationView {
@@ -22,7 +23,7 @@ struct ContentView: View {
                 }, label: {
                     Text("Neue QR Code Scannen")
                 }).sheet(isPresented: self.$showScanner) {
-                    ScannerViewController(result: self.$result)
+                    ScannerViewController()
                 }
                 
             }
