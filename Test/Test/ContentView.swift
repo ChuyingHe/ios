@@ -10,8 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showScanner = false
-    @State private var result: String = ""
-    
+    @ObservedObject private var scannerObject = ScannerViewController()
     
     var body: some View {
         
@@ -21,7 +20,7 @@ struct ContentView: View {
                 Button(action: {
                     self.showScanner = true
                 }, label: {
-                    Text("Neue QR Code Scannen")
+                    Text("Neue QR Code Scannen \(scannerObject.resultOfScanner)")
                 }).sheet(isPresented: self.$showScanner) {
                     ScannerViewController()
                 }

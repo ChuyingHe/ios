@@ -10,8 +10,16 @@ import SwiftUI
 import AVFoundation
 import UIKit
 
-final class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
-    // @Binding var result: String
+final class ScannerViewController: UIViewController, ObservableObject, AVCaptureMetadataOutputObjectsDelegate {
+    @Published public var resultOfScanner: String
+       
+    private init(result: String) {
+        self.resultOfScanner = result
+    }
+    
+    required init?(coder: NSCoder) {
+        print(coder) // what's that
+    }
     
     var captureSession: AVCaptureSession?
     var previewLayer: AVCaptureVideoPreviewLayer?
@@ -110,11 +118,15 @@ final class ScannerViewController: UIViewController, AVCaptureMetadataOutputObje
             }
             guard let stringValue = metadata.stringValue else {
                 print("no string value from readable data")
+                
                 return
             }
+            resultOfScanner = stringValue
             
             // @TODO: what happend then?
-            print(stringValue)
+            print("stringValue: \(stringValue)")
+            
+            print("resultOfScanner: \(resultOfScanner)")
         }
         
         dismiss(animated: true)
@@ -132,11 +144,11 @@ extension ScannerViewController: UIViewControllerRepresentable {
     public typealias UIViewControllerType = ScannerViewController
 
     func makeUIViewController(context: UIViewControllerRepresentableContext<ScannerViewController>) -> ScannerViewController {
-        return ScannerViewController()
+        
+        return ScannerViewController(result: resultOfScanner)
     }
     
     func updateUIViewController(_ uiViewController: ScannerViewController, context: UIViewControllerRepresentableContext<ScannerViewController>) {
         
     }
 }
-
